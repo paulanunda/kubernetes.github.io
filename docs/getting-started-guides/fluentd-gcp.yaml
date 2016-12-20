@@ -27,7 +27,7 @@ spec:
     # in Ruby world. It's a better implementation of malloc(3).
     - name: "LD_PRELOAD"
       value: "/opt/td-agent/embedded/lib/libjemalloc.so"
-    # This is quite hacky, but forces Ruby GC to be ivoked more often
+    # This is quite hacky, but forces Ruby GC to be invoked more often
     # resulting in lower memory consumption, which is important for us.
     - name: "RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR"
       value: "0.9"
